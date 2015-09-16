@@ -1,0 +1,6 @@
+// mixin para declaracao de box-shadow com vendor prefixes quando necessario
+@mixin shadow($color, $x, $y, $radius) {
+  -moz-box-shadow:    $color $x $y $radius;
+  -webkit-box-shadow: $color $x $y $radius;
+  box-shadow:         $color $x $y $radius;
+}
